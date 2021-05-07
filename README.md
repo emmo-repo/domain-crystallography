@@ -1,4 +1,4 @@
-[![CI tests](https://github.com/emmo-repo/domain-crystallography/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-crystallography/actions/)
+[![CI tests](https://github.com/emmo-repo/domain-crystallography/workflows/CI%20emmocheck/badge.svg)](https://github.com/emmo-repo/domain-crystallography/actions/)
 
 
 Crystallography Domain Ontology
