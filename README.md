@@ -1,10 +1,10 @@
 [![CI tests](https://github.com/emmo-repo/domain-crystallography/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-crystallography/actions/)
 
 
-domain-crystallography
-======================
-A crystallography domain ontology based on [EMMO][1] and the [CIF
-core][2] dictionary. It is implemented as a formal language.
+Crystallography Domain Ontology
+===============================
+A crystallography domain ontology based on [EMMO][1] and the [CIF core][2] dictionary.
+It is implemented as a formal language.
 
 
 Status
@@ -27,24 +27,23 @@ compatibilies:
 
 | Imported Ontologies | Version           |
 | ------------------- | ----------------- |
-| emmo-inferred       | 1.0.0-beta        |
+| [EMMO][1]           | 1.0.0-beta        |
+| [CIF-ontology][2]   | 0.1.0             |
 
 
 
-Obtaining domain-crystallography
---------------------------------
+Obtaining the Crystallography Domain Ontology
+---------------------------------------------
+The Crystallography Domain Ontology can be access or opened in Protege
+using the following url
 
-This ontology build on EMMO-1.0.0-beta. The correct path to
-the inferred verion 'emmo-inferred' is specified in the catalog file, catalog-v001.xml.
+    https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl
 
-The domain ontology is obtained with:
+It can also be cloned from its [GitHub repository][3].  With [ssh
+access to GitHub][github-ssh] set up, the Crystallography Domain
+Ontology can be cloned with
 
     git clone git@github.com:emmo-repo/domain-crystallography.git
-
-When opening
-[crystallography.owl](https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl)
-in Protege, the correct version of emmo-inferred will be downloaded
-and imported.
 
 In EMMO-python correct import is obatined with
 
@@ -52,7 +51,7 @@ In EMMO-python correct import is obatined with
 from emmo import get_ontology
 
 # Loading crystallography from local repository
-cryst = get_ontology('/path/to/crystallography.ttl').load(url_from_catalog=True)
+cryst = get_ontology('/path/to/crystallography.ttl').load()
 
 # Loading crystallography from web
 cryst = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-crystallography/master/crystallography.ttl').load()
@@ -61,6 +60,9 @@ cryst = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-crystal
 
 Attributions and credits
 ------------------------
+The Crystallography Domain Ontology is developed and maintained by the
+[EMMC][EMMC] Crystallography Domain Ontology Task Group within the [EMMC Focus
+Area Interoperability][EMMC-interoperability].
 
 ### Contributors
 - Jesper Friis, SINTEF
@@ -84,4 +86,9 @@ Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4
 
 
 [1]: https://github.com/emmo-repo/EMMO
-[2]: https://www.iucr.org/__data/iucr/cifdic_html/1/cif_core.dic/index.html
+[2]: https://github.com/emmo-repo/CIF-ontology
+[3]: https://github.com/emmo-repo/domain-crystallography
+[github]: https://github.com/
+[github-ssh]: https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+[EMMC]: https://emmc.eu/
+[EMMC-interoperability]: https://emmc.eu/activities/emmc-focus-areas/interoperability

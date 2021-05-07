@@ -1,4 +1,4 @@
-name: CI tests
+name: CI emmocheck
 on: [push]
 
 jobs:
@@ -26,5 +26,4 @@ jobs:
 
     - name: Check EMMO
       run: |
-        emmocheck --verbose --skip test_class_label cif_top.ttl
-        #emmocheck --verbose crystallography.ttl
+        emmocheck --verbose --skip=test_namespace crystallography.ttl
