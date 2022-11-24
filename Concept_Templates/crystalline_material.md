@@ -19,7 +19,7 @@ The vast majority of crystal structures are formed of arrangements of atoms that
 ### OWL type: TBA
 ### Concept elucidation
 A solid substance for which measurements on a sample of that substance have 
-been well-described by using the crystalline model (see #5 ). The model used
+been well-described by using the crystalline model (see #12 ). The model used
 may include a number of distinct crystal models which taken together completely
 describe the measurements. This concept does not include materials for which a
 non-crystalline model has been included (for example, an amorphous component)
