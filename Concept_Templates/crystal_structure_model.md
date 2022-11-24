@@ -10,7 +10,8 @@ discussion of various types of crystal including quasicrystals and crystal defec
 
 ### Comments
 
-The vast majority of crystal structures are formed of arrangements of atoms that are periodic in 3 
+The vast majority of crystal structures have been determined by modelling samples as arrangements 
+of atoms that are periodic in 3 
 dimensions (400,000 according to Wikipedia reference 20). Therefore it is important that this very
 common model is captured by our concept definition.
 
@@ -27,3 +28,5 @@ volume unit contains an identical arrangement of atoms. The volume unit is calle
  "crystal", "three-dimensional crystal", "periodic crystal"
 ### Discussion:
 The vast majority (>99.99%) of machine-readable crystal structures have been determined based on this model, therefore it should have a place in the ontology.
+Note that "space-filling" is an important restriction, as other modelling approaches allow overlapping repeated volumes, or for voids
+to appear between the repeating units.
