@@ -25,7 +25,7 @@ polycrystalline blocks, these are potentially better considered as a separate co
 While a typical powder diffraction pattern obtained from a powder will contain peaks, it is impossible to further describe the appearance of these peaks:
 they might be quite broad due to small particle sizes, or purely amorphous components, they may be extremely narrow, their shapes can be asymmetric
 or symmetric and so on. Therefore, unlike a single crystal, a powder is not distinguished by having particular crystallographic properties and so
-is simply described based on physical appearance.
+can only be described based on physical appearance.
 
 ## General Concept Info
 
@@ -33,8 +33,8 @@ is simply described based on physical appearance.
 ### OWL type: TBA
 ### Concept elucidation
 
-A material consisting of a large number of grains. These grains are composed of one or more compounds in solid form forming distinct
-homogeneous domains. Compounds within the grain that have a crystalline structure are called crystallites.
+A material consisting of a large number of distinct grains. The material is freely-flowing, that is, the grains are not amalgamated 
+into a single solid object.
 
 ### Preferred label
 "powder"
@@ -43,13 +43,11 @@ homogeneous domains. Compounds within the grain that have a crystalline structur
 ### Discussion:
 
 The object of this concept is to capture all known data linked to powder diffraction experiments. Restricting a search to powder samples
-will therefore not reject samples containing amorphous components or samples for which a structure has not been determined. In general even an amorphous 
-powder will produce a diffractogram with some structure from which structural information can be derived. Thus the definition is quite general and
-encompasses the general wikipedia meaning while excluding the polycrystalline solid block. It is possible that the EMMO already has a concept
-that aligns sufficiently with this to make this concept redundant.
+should therefore not reject samples containing amorphous components or samples for which a structure has not been determined. In general even an amorphous 
+powder (e.g. from ground glass) will produce a diffractogram with some structure from which structural information can be derived. 
+Thus the definition is quite general and encompasses the general wikipedia meaning while excluding the polycrystalline solid block.
+It is possible that the EMMO already has a concept that aligns sufficiently with this to make defining a separate "powder" concept redundant.
 
-Engineered nanoparticles with distinct shell and core regions composed of different materials (or the same material with a different structure) 
-also fall under this definition.
-
-It is not clear whether it is too restrictive to require distinct domains within the grains. Some powder particles may contain gradations of
-crystallinity with depth due to surface treatments or stresses.
+No mention has been made of common attributes ascribed by crystallographers to powders, such as grain size, texture, core-shell distinctions within
+a single grain, microstrain and so on. These can be created a separate concepts as part of models that are used to describe data obtained
+from powder samples.
