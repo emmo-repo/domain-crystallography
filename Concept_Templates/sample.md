@@ -13,20 +13,15 @@ https://en.wikipedia.org/wiki/Sample_(material): definition and history of the t
 ### IRI: TBA
 ### OWL type: TBA
 ### Concept elucidation
-A sample is the most general concept for a specific representation of a material (in the EMMO sense) used in crystallographic experiments.
+A sample is a physical part of a material (in the EMMO sense) used in crystallographic experiments.
+The physical entity that comprise the sample may change over time. 
+Such change commonly happens as a side effect of the experiments conducted on it.
 
 The concept of a sample requires that experiments have been conducted on the material, or are planned to be conducted.
-If there are more than one distinct actor who performs or analyzes selections of experiments and/or apply their own 
-interpretations to recorded experimental outcomes, they consider different representations of the same material, i.e., 
-different samples. Multiple such samples of a material can exist in parallel with different relations to other 
-crystallographic concepts. Furthermore, the material itself may undergo a physical transformation over time 
-(which commonly happens as a side effect of the experiments conducted on it), i.e., the sample may have a sequence 
-of temporal parts with different relations to crystallographic concepts.
 
 The text above uses the word "experiment" to refer to a semiotic process that results in one or more signs related to the sample.
 
-The concept "sample" may be generalizable outside the crystallography domain ontology to mean
-a representation of a material used for any experiments (EMMO:sample?).
+The concept "sample" may be generalizable outside the crystallography domain ontology to mean a representation of a material used for any experiments (EMMO:sample?).
 ### Preferred label
 "sample"
 ### Alternate labels
