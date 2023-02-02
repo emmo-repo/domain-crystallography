@@ -20,8 +20,8 @@ common model is captured by our concept definition.
 ### IRI: TBA
 ### OWL type: TBA
 ### Concept elucidation
-A model consisting of a space-filling infinite array of repeating volume units, where each
-volume unit contains an identical arrangement of atoms. The volume unit is called a "unit cell".
+A model that includes a space-filling infinite array of non-overlapping repeating volume units, where each
+volume unit contains an arrangement of atoms that is, on average, identical. The volume unit is called a "unit cell".
 ### Preferred label
 "conventional crystal structure model"
 ### Alternate labels
