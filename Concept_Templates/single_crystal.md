@@ -7,7 +7,7 @@ Expert discussions also raised the issue of different dimensionality crystals, q
 
 https://en.wikipedia.org/wiki/Crystal: information as above, as well as history of the term,
 some discussion of various types of crystal including quasicrystals and crystal defects.
-
+https://doi.org/10.1080/0889311X.2021.1978080: several definitions of the concept crystal and the evolution of the term over the last 100 years.
 ### Comments
 
 The vast majority of crystal structures are formed of arrangements of atoms that are
