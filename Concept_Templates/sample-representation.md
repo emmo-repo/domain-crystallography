@@ -22,7 +22,6 @@ A sample representation refers to a specific interpretation of the underlying ph
 If more than one distinct actor performs or analyzes selections of experiments and/or apply their own interpretations to recorded experimental outcomes, what they are considering are different sample representations of the sample.
 Multiple sample representations can exist in parallel with different relations to other crystallographic concepts, possibly representing *contradictory* interpretations of the same sample.
 
-The concept "sample representation" may be generalizable outside the crystallography domain ontology to mean a representation of a material used for any experiments (EMMO:sample?).
 ### Preferred label
 "sample representation"
 ### Alternate labels
@@ -30,8 +29,10 @@ The concept "sample representation" may be generalizable outside the crystallogr
 ### Discussion:
 Sample representation is meant to be a useful concept for entities in databases of crystallographic experimental data as "the thing" to which one can assign crystallography ontology concepts by interpretation of sets of experiments and other input or circumstances, via manual or automated reasoning.
 
-Ligusitically it makes sense to say that a sample representation "is" (has an "is-a" relationship to) a specific crystalographic model, e.g., a "periodic crystal".
+Linguistically it makes sense to say that a sample representation "is" (has an "is-a" relationship to) a specific crystallographic model, e.g., a "periodic crystal".
 
 This gives an entity which can be queried for in a natural way, e.g.: "Find all sample representations that have a NaCl structure and that contains Ni".
 Expressing the same query in terms of samples and 'is-modelled-by' relations would lead to expressions like: "Find all samples that have been simultaneously modelled-by NaCl structure and Ni presence".
 This both seems a less natural phrasing and less clear (does it need to be the same actor that assigns both models?)
+
+The concept "sample representation" may be generalizable outside the crystallography domain ontology to mean a representation of a material used for any experiments (EMMO:sample?).
