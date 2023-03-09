@@ -31,3 +31,7 @@ model predicts the location and intensity of diffraction peaks scattered by a ma
 The vast majority (>99.99%) of machine-readable crystal structures have been determined based on this model, therefore it should have a place in the ontology.
 Note that "space-filling" is an important restriction, as other modelling approaches allow overlapping repeated volumes, or for voids
 to appear between the repeating units.
+
+EMMO does not allow abstract concepts, such as "model". Instead, a semiotic process should be described involving mathematical expressions, data,
+and interpreters that link the mathematical expressions to data. This involves the "semiotic" EMMO ontology in the Holistic perspective, as well
+as the "Data" perspective.
