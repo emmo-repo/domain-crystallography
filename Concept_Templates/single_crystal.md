@@ -19,8 +19,7 @@ measurements on samples are modelled assuming the sample is a single crystal.
 ### IRI: TBA
 ### OWL type: TBA
 ### Concept elucidation
-A sample of a solid substance that has been well-described by using a crystalline model
-(see #5 ). No more than one crystalline model is required for modelling the measurements, so the sample is neither twinned nor a powder.
+A solid substance consisting of many repeated, non-overlapping volume units, called "unit cells".
 ### Preferred label
 "single crystal"
 ### Alternate labels
@@ -30,7 +29,10 @@ A material can only be known to be crystalline after measurements have been take
 For example, cut glass may appear the same as a naturally-occuring crystal, but is not crystalline.
 The canonical measurement technique is to illuminate a sample of the material with beams of electrons,
 X-rays, or neutrons, and if intensity is detected in specific directions the material is considered crystalline.
-If the intensities and positions of all of the spots thus detected from a sample can be modelled
-using a single crystalline model, the sample is considered to be a single crystal. A material would not
-itself be considered a "single crystal", as various samples of notionally the same material might not all be single crystals.
+A material would not itself be considered a "single crystal", as various samples of notionally the same material might not all be single crystals.
+In order for this concept to be useful, other parts of EMMO need to state when a particular object can be interpreted as being a single crystal.
 
+In the EMMO approach, a real object is considered to be an ideal crystal if data derived from a crystallographic model of an ideal crystal
+is interpreted as applying to that object. If diffraction peaks are observed from a material, that would also be a basis for considering that
+a material is crystalline, but it may have a more complex structure, such as being twinned or composite.
+A separate concept is provided for such complex cases.
