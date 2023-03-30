@@ -18,25 +18,23 @@ The vast majority of crystal structures are formed of arrangements of atoms that
 ### IRI: TBA
 ### OWL type: TBA
 ### Concept elucidation
-A solid substance for which measurements on a sample of that substance have 
-been well-described by using the crystalline model (see #12 ). The model used
-may include a number of distinct crystal models which taken together completely
-describe the measurements. This concept does not include materials for which a
-non-crystalline model has been included (for example, an amorphous component)
-in order to describe the measurements.  This concept does include materials
-for which the models used include other parameters not related to the atomic
-structure of the material, for example powder diffraction modelling often
-involves modelling of the instrumental contribution to the measurements.
+A solid substance consisting of many repeated, non-overlapping volume units, called "unit cells".
 ### Preferred label
-"crystalline material"
+"ideal crystal"
 ### Alternate labels
- "crystal", "three-dimensional crystal", "periodic crystal", "powder"
+ "crystal", "three-dimensional crystal", "periodic crystal"
 ### Discussion
 A material can only be known to be crystalline after measurements have been
 taken on it. For example, cut glass may appear the same as a naturally-occuring
 crystal, but is not crystalline. The canonical measurement technique is to illuminate
 a sample of the material with beams of electrons, X-rays, or neutrons, and if
 intensity is detected in specific directions the material is considered crystalline.
-A material may be modelled as an aggregate of multiple crystalline materials, for
-example if it is a composite, twinned or a mixture of powders.
+In order for this concept to be useful, other parts of EMMO need to state when
+a particular object can be interpreted as being a single crystal.
 
+In the EMMO approach, a real object is considered to be an ideal crystal if
+data derived from a crystallographic model of an ideal crystal is interpreted
+as applying to that object. If diffraction peaks are observed
+from a material, that would also be a basis for considering that a material is
+crystalline, but it may have a more complex structure, such as being twinned
+or composite. A separate concept should be provided for such complex cases.
