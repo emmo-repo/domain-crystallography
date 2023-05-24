@@ -1,4 +1,6 @@
 [![CI tests](https://github.com/emmo-repo/domain-crystallography/workflows/CI%20emmocheck/badge.svg)](https://github.com/emmo-repo/domain-crystallography/actions/)
+[![DOI](https://zenodo.org/badge/357254456.svg)](https://zenodo.org/badge/latestdoi/357254456)
+
 
 
 Crystallography Domain Ontology
