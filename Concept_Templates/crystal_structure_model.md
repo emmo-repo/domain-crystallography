@@ -10,7 +10,8 @@ discussion of various types of crystal including quasicrystals and crystal defec
 
 ### Comments
 
-The vast majority of crystal structures are formed of arrangements of atoms that are periodic in 3 
+The vast majority of crystal structures have been determined by modelling samples as arrangements 
+of atoms that are periodic in 3 
 dimensions (400,000 according to Wikipedia reference 20). Therefore it is important that this very
 common model is captured by our concept definition.
 
@@ -19,11 +20,18 @@ common model is captured by our concept definition.
 ### IRI: TBA
 ### OWL type: TBA
 ### Concept elucidation
-A model consisting of a space-filling infinite array of repeating volume units, where each
-volume unit contains an identical arrangement of atoms. The volume unit is called a "unit cell".
+A mathematical model that includes a space-filling infinite array of non-overlapping repeating volume units, where each
+volume unit contains an arrangement of atoms that is, on average, identical. The volume unit is called a "unit cell". The
+model predicts the location and intensity of diffraction peaks scattered by a material.
 ### Preferred label
 "conventional crystal structure model"
 ### Alternate labels
  "crystal", "three-dimensional crystal", "periodic crystal"
 ### Discussion:
 The vast majority (>99.99%) of machine-readable crystal structures have been determined based on this model, therefore it should have a place in the ontology.
+Note that "space-filling" is an important restriction, as other modelling approaches allow overlapping repeated volumes, or for voids
+to appear between the repeating units.
+
+EMMO does not allow abstract concepts, such as "model". Instead, a semiotic process should be described involving mathematical expressions, data,
+and interpreters that link the mathematical expressions to data. This involves the "semiotic" EMMO ontology in the Holistic perspective, as well
+as the "Data" perspective.
