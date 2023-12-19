@@ -42,14 +42,19 @@ It is implemented as a formal language.""" ;
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
                                                              owl:someValuesFrom :EMMO_68da0914_fc59_40a7_9ca9_92a7431c9551
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_6ddf3c3c_3148_49f8_89de_3647d76981bd
                                                            ] ;
-                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A repeating unit formed by the vectors spanning the points of a lattice."@en ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A unit spanned by a set of lattice vectors (normally 3 lattice vectors). By translating it along the lattice vectors, it can (non-overlapping) cover the entire crystal structure."@en ;
                                            skos:prefLabel "UnitCell"@en .
 
 
 ###  http://emmo.info/domain-crystallography#EMMO_22f7b3a4_e745_4139_a828_872c0ef3b465
 :EMMO_22f7b3a4_e745_4139_a828_872c0ef3b465 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_2438be40_e054_4302_afe3_afbb919eed91 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Periodic arrangement of points in space that define corners of possible unit cells."@en ;
                                            skos:prefLabel "CrystalLattice"@en .
 
 
@@ -73,6 +78,7 @@ Lattice site"""@en ;
 ###  http://emmo.info/domain-crystallography#EMMO_68da0914_fc59_40a7_9ca9_92a7431c9551
 :EMMO_68da0914_fc59_40a7_9ca9_92a7431c9551 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_2438be40_e054_4302_afe3_afbb919eed91 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Places where atoms can reside in a crystal structure."@en ;
                                            skos:prefLabel "LatticeSite"@en .
 
 
@@ -81,7 +87,7 @@ Lattice site"""@en ;
                                            rdfs:subClassOf :EMMO_f44b7fdf_f626_404a_ad1e_3760f164d4f4 ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Physical quantities that describes the shape and size of the unit cell. 
 
-These can be expressed in several ways, typically either via the length and angles between the three lattice vectors spanning the unit cell or via the metric tensor."""@en ;
+These can be expressed in several ways, like three lattice vectors, the length and angles between the three lattice vectors spanning the unit cell or via the metric tensor."""@en ;
                                            emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "a, b, c, alpha, beta, gamma"@en ;
                                            skos:altLabel "CellParameter"@en ;
                                            skos:prefLabel "LatticeParameter"@en .
@@ -94,10 +100,11 @@ These can be expressed in several ways, typically either via the length and angl
                                            skos:prefLabel "WychoffSite"@en .
 
 
-###  http://emmo.info/domain-crystallography#EMMO_82c67741_f94d_462f_a077_48c56a2ebe9c
-:EMMO_82c67741_f94d_462f_a077_48c56a2ebe9c rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_f44b7fdf_f626_404a_ad1e_3760f164d4f4 ;
-                                           skos:prefLabel "LatticeVector"@en .
+###  http://emmo.info/domain-crystallography#EMMO_9d7e7421_ae9f_40d3_8eff_b46900ad42e7
+:EMMO_9d7e7421_ae9f_40d3_8eff_b46900ad42e7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_6ddf3c3c_3148_49f8_89de_3647d76981bd ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A set of lattice parameters that are sufficient to describe the size and shape of the unit cell."@en ;
+                                           skos:prefLabel "SufficientLatticeParameterSet"@en .
 
 
 ###  http://emmo.info/domain-crystallography#EMMO_cec303aa_5100_48bf_82f8_115db1088386
@@ -106,6 +113,10 @@ These can be expressed in several ways, typically either via the length and angl
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
                                                              owl:someValuesFrom :EMMO_198e4813_bdf9_4263_bf0a_b5915d5f8fed
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_f44b7fdf_f626_404a_ad1e_3760f164d4f4
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty [ owl:inverseOf emmo:EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b
@@ -119,9 +130,39 @@ These can be expressed in several ways, typically either via the length and angl
 
 ###  http://emmo.info/domain-crystallography#EMMO_f44b7fdf_f626_404a_ad1e_3760f164d4f4
 :EMMO_f44b7fdf_f626_404a_ad1e_3760f164d4f4 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
+                                           rdfs:subClassOf :EMMO_1231a04c_59ea_45c3_85e6_85ba7a0de6f5 ,
+                                                           emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical quantities categorised as relevant for crystallography."@en ;
+                                           skos:prefLabel "CrystallographicalPhysicalQuantity"@en .
+
+
+###  http://emmo.info/domain-crystallography/crystallography#EMMO_1231a04c_59ea_45c3_85e6_85ba7a0de6f5
+:EMMO_1231a04c_59ea_45c3_85e6_85ba7a0de6f5 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Quantities categorised as relevant for crystallography."@en ;
                                            skos:prefLabel "CrystallographicalQuantity"@en .
+
+
+###  http://emmo.info/domain-crystallography/crystallography#EMMO_487fcff1_9f62_4caf_b28d_5432ec6285c0
+:EMMO_487fcff1_9f62_4caf_b28d_5432ec6285c0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_9d7e7421_ae9f_40d3_8eff_b46900ad42e7 ;
+                                           skos:prefLabel "LatticeParameterLatticeVector"@en .
+
+
+###  http://emmo.info/domain-crystallography/crystallography#EMMO_b4003467_2682_48dd_9a16_8c18d7a0b219
+:EMMO_b4003467_2682_48dd_9a16_8c18d7a0b219 rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( <http://emmo.info/emmo/cif-core#_cell.length_a>
+                                                                                      <http://emmo.info/emmo/cif-core#_cell.length_b>
+                                                                                      <http://emmo.info/emmo/cif-core#_cell.length_c>
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:subClassOf :EMMO_9d7e7421_ae9f_40d3_8eff_b46900ad42e7 ;
+                                           skos:prefLabel "LatticeParameterLengthAndAngle"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a1bd0bfc_5464_43ce_a1a2_947b58dc0f89
+emmo:EMMO_a1bd0bfc_5464_43ce_a1a2_947b58dc0f89 rdfs:subClassOf :EMMO_f44b7fdf_f626_404a_ad1e_3760f164d4f4 .
 
 
 ###  http://emmo.info/emmo/cif-core#_cell.length_a
