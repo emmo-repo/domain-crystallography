@@ -2,9 +2,9 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
 
-    <uri name="http://emmo.info/emmo/1.0.0-beta5"      uri="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/versions/1.0.0-beta5/emmo.ttl"/>
-    <uri name ="http://emmo.info/emmo/cif-core"        uri="https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-core.ttl"/>
-    <uri name ="http://emmo.info/emmo/cif-ddl"         uri="https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-ddl.ttl"/>
+    <uri name="http://emmo.info/emmo/1.0.0-beta5"                 uri="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/versions/1.0.0-beta5/emmo.ttl"/>
+    <uri name="http://emmo.info/CIF-ontology/ontology/cif_core"   uri="https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-core.ttl"/>
+    <uri name="http://emmo.info/emmo/cif-ddl"                     uri="https://raw.githubusercontent.com/emmo-repo/CIF-ontology/main/ontology/cif-ddl.ttl"/>
 
   </group>
 </catalog>
