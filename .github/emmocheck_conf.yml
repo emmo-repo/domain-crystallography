@@ -1,0 +1,7 @@
+# Configurations used when running emmocheck from the ci_emmocheck workflow
+test_quantity_dimension:
+  exceptions:
+    - domain-crystallography.LatticeParameterLengthAndAngle
+    - domain-crystallography.CrystallographicalPhysicalQuantity
+    - domain-crystallography.LatticeParameter
+    - domain-crystallography.SufficientLatticeParameterSet
