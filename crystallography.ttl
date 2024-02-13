@@ -88,7 +88,11 @@ Lattice site"""@en ;
 
 ###  http://emmo.info/domain-crystallography#EMMO_487fcff1_9f62_4caf_b28d_5432ec6285c0
 :EMMO_487fcff1_9f62_4caf_b28d_5432ec6285c0 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_9d7e7421_ae9f_40d3_8eff_b46900ad42e7 ;
+                                           rdfs:subClassOf :EMMO_9d7e7421_ae9f_40d3_8eff_b46900ad42e7 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                             owl:someValuesFrom emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc
+                                                           ] ;
                                            skos:prefLabel "LatticeParameterLatticeVector"@en .
 
 
